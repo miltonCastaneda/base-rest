@@ -1,7 +1,7 @@
-const samplesApi = require('./sample');
+const SampleRourter = require('./sample');
 
 function router(app) {
-  samplesApi(app);
+  new SampleRourter(app);
 }
 
 module.exports = router;
