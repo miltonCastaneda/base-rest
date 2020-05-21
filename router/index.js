@@ -1,7 +1,8 @@
+/**
+ * Exporta todas las rutas en un solo modulo
+ */
 const SampleRourter = require('./sample');
 
-function router(app) {
+module.exports = (app) => {
   new SampleRourter(app);
-}
-
-module.exports = router;
+};

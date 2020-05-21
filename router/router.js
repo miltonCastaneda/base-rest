@@ -1,5 +1,9 @@
 const express = require('express');
 
+/**
+ * Clase padre para rutas
+ * Se agrega agui todo lo que es general entre todas las rutas
+ */
 class Rourter {
 /**
  * Se crea router y se define el path para el contexto de un servicio
@@ -19,6 +23,14 @@ class Rourter {
    * este metodo es ejecutado por la clase padre Router, no pasa nada si no se agrega
    */
   start(){}
+  
+  generalMiddleware(nameAction, schemaParams, shcemaBody, schemaHeaders){
+
+  }
+
+  validationHandler(schema, check = 'body'){
+    
+  }
 }
 
 module.exports = Rourter;
